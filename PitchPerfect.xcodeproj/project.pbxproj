@@ -14,6 +14,7 @@
 		886FD1472428FD2400C60BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886FD1462428FD2400C60BDB /* Assets.xcassets */; };
 		886FD14A2428FD2400C60BDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886FD1482428FD2400C60BDB /* LaunchScreen.storyboard */; };
 		8880023B242A7C0800BFDA33 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8880023A242A7C0800BFDA33 /* PlaySoundsViewController.swift */; };
+		88B3B89F242B98E3001A749A /* playsoundsviewcontroller-audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B3B89E242B98E3001A749A /* playsoundsviewcontroller-audio.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		886FD1492428FD2400C60BDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		886FD14B2428FD2400C60BDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8880023A242A7C0800BFDA33 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
+		88B3B89E242B98E3001A749A /* playsoundsviewcontroller-audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "playsoundsviewcontroller-audio.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				886FD1482428FD2400C60BDB /* LaunchScreen.storyboard */,
 				886FD14B2428FD2400C60BDB /* Info.plist */,
 				8880023A242A7C0800BFDA33 /* PlaySoundsViewController.swift */,
+				88B3B89E242B98E3001A749A /* playsoundsviewcontroller-audio.swift */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				886FD1422428FD2200C60BDB /* RecordSoundsViewController.swift in Sources */,
+				88B3B89F242B98E3001A749A /* playsoundsviewcontroller-audio.swift in Sources */,
 				886FD13E2428FD2200C60BDB /* AppDelegate.swift in Sources */,
 				8880023B242A7C0800BFDA33 /* PlaySoundsViewController.swift in Sources */,
 				886FD1402428FD2200C60BDB /* SceneDelegate.swift in Sources */,
