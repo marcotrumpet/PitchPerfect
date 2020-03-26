@@ -25,10 +25,6 @@ class PlaySoundsViewController: UIViewController {
     var audioPlayerNode: AVAudioPlayerNode!
     var stopTimer: Timer!
     
-    enum ButtonType: Int {
-        case slow = 0, fast, chipmunk, vader, echo, reverb
-    }
-    
     @IBAction func playSoundForButton(_ sender: UIButton) {
         configureUI(.playing)
         switch sender {
