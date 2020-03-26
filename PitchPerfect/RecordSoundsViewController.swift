@@ -25,6 +25,11 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         toggleRecording(false)
     }
     
+    struct LabelText {
+        static let Recording = "Recording in Progress"
+        static let NotRecording = "Tap to Record..."
+    }
+    
     @IBAction func recordAudio(_ sender: Any) {
         toggleRecording(true)
         
@@ -54,8 +59,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
         if flag {
             performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
-        } else {
-            print("error")
         }
     }
     
@@ -71,13 +74,13 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     func toggleRecording(_ recording: Bool) {
         if recording {
-            recordingLabel.text = "Recording in Progress"
+            recordingLabel.text = LabelText.Recording
             stopRecordingButton.isEnabled = true
             recordButton.isEnabled = false
         } else {
             stopRecordingButton.isEnabled = false
             recordButton.isEnabled = true
-            recordingLabel.text = "Tap to Record..."
+            recordingLabel.text = LabelText.NotRecording
         }
     }
 }
